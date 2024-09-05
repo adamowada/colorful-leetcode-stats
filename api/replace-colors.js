@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   // Fetch the SVG from the Leetcode Stats API
   try {
     const svgResponse = await fetch(
-      `https://leetcard.jacoblin.cool/${req.query.username}?border=2&radius=5`
+      `https://leetcard.jacoblin.cool/${req.query.username}?border=2&radius=5&ext=activity`
     );
     let svgContent = await svgResponse.text();
 
